@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.85rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4{
+  font-size: 1.35rem;
+}
+h5{
+    font-size: 1.13rem;
+}
+h6{
+    font-size: 1.1rem;
+}
+p{
+    font-size:0.99rem ;
+}
+@media screen and (min-width:800px){
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 1.75rem;
+    }
+    h4{
+      font-size: 1.35rem;
+    }
+    h5{
+        font-size: 1.2rem;
+    }
+    h6{
+        font-size: 1.25rem;
+    }
+    p{
+        font-size:1.11rem ;
+    }
+}
+.section{
+    min-height: 100vh;
+    background-color: rgba(173, 216, 230, 0.466);
+    padding: .8rem 1rem;
+}
+.title{
+    margin: .8rem .5rem;
+    text-align: center;
+}
+.title h2{
+    text-transform: uppercase;
+    font-family: forte;
+   /* font-family: monotype corsiva; */
+   font-weight: bolder;
+    letter-spacing: .15rem;
+    color: rgb(197, 37, 69);
+    color:  rgb(187, 24, 108);
+}
+.title p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: .1rem;
+    color: lightslategray;
+    padding: .2rem .6rem;
+}
+.section-center{
+    margin-top: .7rem;
+    /* border: .1rem solid #222; */
+    padding: .35rem .3rem;
+}
+.header{
+    margin: .1rem 1rem;
+    padding: .5rem;
+    text-align: center;
+    border-bottom: .1rem solid #222;
+}
+.header img{
+    width: 300px;
+    border-radius: .15rem;
+    object-fit: cover;
+}
+.about{
+    width: 98%;
+    letter-spacing: .1rem;
+    margin:.1rem auto; 
+    padding: .5rem .7rem ;
+    text-align: center;
+}
+.about h3{
+    text-align: left;
+    text-transform: capitalize;
+    margin: .5rem 0 .3rem 1rem;
+    color: rgb(167, 58, 116);
+    font-family: forte;
+    
+}
+.about h5{
+    letter-spacing: .07rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: darkslategray;
+}
+.about .deadline-about{
+    margin:.5rem 0 2rem 0;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: .1rem;
+    color: lightslategray;
+}
+.deadline-about::first-letter{
+    margin-left: 1rem;
+}
+.deadline-container{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     column-gap: 0rem;
+     justify-content: space-around;
+     margin-left: 1rem;
+}
+.deadline-count{
+    height: 4rem;
+    width: 4.5rem;
+    margin: .1rem .2rem;
+    background-color: rgb(192, 51, 124);
+    color: white;
+    letter-spacing: .15rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: .2rem;
+}
+
+.deadline-count h4{
+    margin: .25rem 0 0.5rem 0;
+    color: white;
+    font-weight: bolder;
+    font-family: georgia;
+}
+.deadline-count span{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.expire{
+    font-size: 1.3rem;
+    color: rgb(194, 47, 47) !important; 
+    text-transform: lowercase !important;
+}
+.expire::first-letter{
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:800px){
+    .section-center{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: .8rem;
+        /* background: lime; */
+        margin: 2rem 5rem ;
+    }
+    .header{
+   border-right: .1rem solid #222;
+   border-bottom: none;
+    }
+    .header img{
+        width: 390px;
+        object-fit: cover;
+        border-radius: 0rem;
+    }
+    .about{
+        padding: 1rem 1.5rem;
+    }
+    .about h5{
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+    .deadline-about{
+        margin-bottom: 1rem;
+    }
+    .deadline-container{
+        margin: .1rem 1rem .1rem 0rem;
+    }
+    .deadline-count{
+        margin: .2rem .3rem;
+    }
+}
